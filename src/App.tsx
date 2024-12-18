@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import IntegratedApps from "./components/IntegratedApps";
 import LinkRow from "./components/LinkRow";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Hero />
       </div>
       <LinkRow />
+      <IntegratedApps />
     </>
   );
 }
