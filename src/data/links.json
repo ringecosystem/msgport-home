@@ -1,0 +1,43 @@
+{
+  "links": [
+    {
+      "logo": "/assets/logos/polygon.svg"
+    },
+    {
+      "logo": "/assets/logos/darwinia.svg"
+    },
+    {
+      "logo": "/assets/logos/ethereum.svg"
+    },
+    {
+      "logo": "/assets/logos/arbitrum.svg"
+    },
+    {
+      "logo": "/assets/logos/moonbeam.svg"
+    },
+    {
+      "logo": "/assets/logos/blast.svg"
+    },
+    {
+      "logo": "/assets/logos/tron.svg"
+    },
+    {
+      "logo": "/assets/logos/arbitrum-sepolia.svg"
+    },
+    {
+      "logo": "/assets/logos/koi.svg"
+    },
+    {
+      "logo": "/assets/logos/tron-shasta.svg"
+    },
+    {
+      "logo": "/assets/logos/taiko-hekla.svg"
+    },
+    {
+      "logo": "/assets/logos/sepolia.svg"
+    },
+    {
+      "logo": "/assets/logos/crab.svg"
+    }
+  ]
+}
