@@ -7,9 +7,7 @@ interface ContainerProps {
 
 const Container: React.FC<ContainerProps> = ({ children, classes }) => {
   return (
-    <div
-      className={"px-[1.25rem] lg:px-[3.125rem] 3xl:px-[6.25rem] " + classes}
-    >
+    <div className={"px-[1.25rem] lg:px-[6.25rem] 3xl:px-[6.25rem] " + classes}>
       {children}
     </div>
   );

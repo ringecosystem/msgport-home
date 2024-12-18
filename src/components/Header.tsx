@@ -4,7 +4,7 @@ import Container from "./Container";
 const Header = () => {
   const [submenu, setSubmenu] = useState(false);
   return (
-    <Container classes="flex items-center justify-between py-[0.625rem] lg:py-[2.313rem] relative">
+    <Container classes="flex items-center justify-between py-[0.625rem] lg:py-[2rem] relative">
       <img
         src="/images/logo.png"
         alt="msglogo"
@@ -14,24 +14,27 @@ const Header = () => {
         <a
           target="_blank"
           href="https://msgport.ringdao.com/docs"
-          className="text-white text-[1rem] font-[600] leading-[1.563rem]"
+          className="text-white text-[1rem] font-[300] leading-[1.563rem]"
         >
-          Learn
+          Msgport Scan
         </a>
         <a
           target="_blank"
           href="https://msgport.ringdao.com/docs/build/networks.html"
-          className="text-white text-[1rem] font-[600] leading-[1.563rem]"
+          className="text-white text-[1rem] font-[300] leading-[1.563rem]"
         >
-          Build
+          Supported Networks
         </a>
         <a
           target="_blank"
           href="https://msgport.ringdao.com/docs/community/ringdao.html"
-          className="text-white text-[1rem] font-[600] leading-[1.563rem]"
+          className="text-white text-[1rem] font-[300] leading-[1.563rem]"
         >
-          Community
+          Docs
         </a>
+        <button className="text-[#161616] text-[1rem] font-[600] leading-[1.563rem] bg-[#00D448] h-[36px] rounded-[18px] px-[20px]">
+          Try Msgport
+        </button>
       </div>
 
       {/* mobile */}
