@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import IntegratedApps from "./components/IntegratedApps";
 import LinkRow from "./components/LinkRow";
+import Scenarios from "./components/scenarios";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <LinkRow />
       <IntegratedApps />
       <CodePart />
+      <Scenarios />
     </>
   );
 }
