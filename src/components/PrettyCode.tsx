@@ -1,7 +1,9 @@
 import { CSSProperties, useEffect, useRef } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { Prism, SyntaxHighlighterProps } from "react-syntax-highlighter";
 // @ts-ignore
 import xonokai from "react-syntax-highlighter/dist/esm/styles/prism/xonokai.js";
+
+const SyntaxHighlighter = Prism as any as React.FC<SyntaxHighlighterProps>;
 
 interface Props {
   language: "solidity" | "typescript" | "javascript" | "rust" | "go";
