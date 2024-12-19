@@ -58,6 +58,7 @@ export default function PrettyCode({
           borderRadius: "0.625rem",
           ...customStyle,
         }}
+        PreTag="div"
         className={className}
       >
         {code}
