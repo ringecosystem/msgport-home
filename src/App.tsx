@@ -1,5 +1,6 @@
 import CodePart from "./components/CodePart";
 import Comments from "./components/Comments";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import IntegratedApps from "./components/IntegratedApps";
@@ -23,6 +24,7 @@ function App() {
       <CodePart />
       <Scenarios />
       <Comments />
+      <Footer />
     </>
   );
 }

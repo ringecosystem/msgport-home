@@ -4,7 +4,7 @@ import data from "../data/comments.json";
 export default function Comments() {
   const [current, setCurrent] = useState<number>(0);
   return (
-    <div className="py-[3.125rem] flex flex-col justify-center overflow-hidden">
+    <section className="py-[3.125rem] flex flex-col justify-center overflow-hidden">
       <div
         className="flex gap-[3.125rem] duration-300"
         style={{
@@ -56,6 +56,6 @@ export default function Comments() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
