@@ -6,10 +6,12 @@ export default function CodePart() {
   return (
     <Container classes="flex flex-col gap-[12.5rem] py-[6.25rem]">
       <div className="flex items-center justify-center gap-[6.25rem]">
-        <PrettyCode
-          language={codeBlocks.easyIntegration.language}
-          code={codeBlocks.easyIntegration.code}
-        />
+        <div className="w-[50%] flex-shrink-0">
+          <PrettyCode
+            language={codeBlocks.easyIntegration.language}
+            code={codeBlocks.easyIntegration.code}
+          />
+        </div>
         <div className="flex flex-col">
           <img
             src="/assets/icons/easy-integration-icon.svg"
@@ -45,10 +47,12 @@ export default function CodePart() {
             contract, which provides utility functions for message validation.
           </p>
         </div>
-        <PrettyCode
-          language={codeBlocks.validation.language}
-          code={codeBlocks.validation.code}
-        />
+        <div className="w-[50%] flex-shrink-0">
+          <PrettyCode
+            language={codeBlocks.validation.language}
+            code={codeBlocks.validation.code}
+          />
+        </div>
       </div>
     </Container>
   );

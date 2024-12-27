@@ -3,7 +3,7 @@ import Container from "./Container";
 export default function Scenarios() {
   return (
     <Container classes="lg:px-[6.25rem] 3xl:px-[6.25rem] py-[6.25rem] bg-[#00D448] flex flex-col items-center">
-      <h3 className="text-[3.5rem] text-[#161616] font-[600] mb-[5.625rem]">
+      <h3 className="text-[3.5rem] text-[#161616] font-[600] mb-[5.625rem] text-center">
         Scenarios include but are not limited to
       </h3>
       <div className="flex items-center justify-between">
