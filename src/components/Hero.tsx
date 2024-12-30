@@ -26,9 +26,9 @@ const Hero = () => {
         <PrettyCode
           language={codeBlocks.heroCode.language}
           code={codeBlocks.heroCode.code}
-          className="w-full lg:w-[unset]"
+          className="w-full lg:w-[35vw]"
         />
-        <p className="text-[18px] lg:text-[2.25rem] w-full lg:w-[unset] leading-[20px] lg:leading-[2.85rem] text-white">
+        <p className="text-[18px] lg:text-[2.25rem] lg:w-[35vw] leading-[20px] flex-shrink-0 lg:leading-[2.85rem] text-white">
           The <span className="text-[#00D448] font-bold">only interface</span>{" "}
           your Dapp
           <br className="hidden lg:block" /> interacts with when
