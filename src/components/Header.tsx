@@ -17,8 +17,8 @@ const Header = () => {
   }, [submenu]);
   return (
     <Container
-      classes={`flex items-center justify-between p-[10px_20px] lg:py-[2rem] z-[1000] bg-[#0D150F] lg:bg-[unset] h-[50px] lg:h-[unset] w-full ${
-        submenu ? "fixed" : "static"
+      classes={`flex items-center justify-between p-[10px_20px] z-[100] lg:py-[2rem] bg-[#0D150F] lg:bg-[unset] h-[50px] lg:h-[unset] w-full ${
+        submenu ? "fixed" : "realtive"
       }`}
     >
       <img
@@ -26,7 +26,7 @@ const Header = () => {
         alt="msglogo"
         className="w-[93px] h-[30px] lg:w-[10.688rem] lg:h-[3.438rem]"
       />
-      <div className="lg:gap-[2.5rem] lg:flex items-center hidden">
+      <div className="lg:gap-[2.5rem] lg:flex items-center hidden z-[100]">
         <a
           target="_blank"
           href="https://scan.msgport.xyz"
