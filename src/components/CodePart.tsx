@@ -5,7 +5,7 @@ import { codeBlocks } from "../data/code";
 export default function CodePart() {
   return (
     <Container classes="flex flex-col items-center gap-[200px] lg:gap-[12.5rem] py-[100px] lg:py-[6.25rem]">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-[40px] lg:gap-[6.25rem] lg:max-w-[1440px]">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-[40px] lg:gap-[6.25rem] w-full lg:max-w-[1440px]">
         <div className="w-full lg:w-[50%] flex-shrink-0">
           <PrettyCode
             language={codeBlocks.easyIntegration.language}
@@ -31,7 +31,7 @@ export default function CodePart() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-[40px] lg:gap-[6.25rem] lg:max-w-[1440px]">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-[40px] lg:gap-[6.25rem] w-full lg:max-w-[1440px]">
         <div className="flex flex-col items-center lg:items-end">
           <img
             src="/assets/icons/validation-icon.svg"

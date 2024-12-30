@@ -1,20 +1,40 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import data from "../data/comments.json";
+import useWidth from "../hooks/useWidth";
 
 export default function Comments() {
+  const width = useWidth();
   const [current, setCurrent] = useState<number>(0);
+  const intervalRef = useRef<any>(null);
+  useEffect(() => {
+    if (intervalRef.current === null) {
+      intervalRef.current = setInterval(() => {
+        setCurrent((prevCurrent) =>
+          prevCurrent < data.comments.length - 1 ? prevCurrent + 1 : 0
+        );
+      }, 6000);
+    }
+  }, []);
+  console.log(current);
   return (
-    <section className="py-[100px] lg:py-[3.125rem] flex flex-col justify-center overflow-hidden">
+    <section className="py-[100px] lg:py-[3.125rem] flex flex-col justify-center overflow-hidden w-[100vw]">
       <div
-        className="flex gap-[10px] lg:gap-[3.125rem] duration-300"
+        className="flex gap-[10px] lg:gap-[3.125rem] duration-700"
         style={{
-          transform: `translateX(calc(${-current * 50 + 25}vw - 3.125rem))`,
+          transform:
+            width > 1024
+              ? `translateX(calc(${-current * 50 + 25}vw - (${
+                  current * 3.125
+                }rem)))`
+              : `translateX(calc(${-current * 80 + 10}vw - (${
+                  current * 10
+                }px)))`,
         }}
       >
         {data.comments.map((comment: any) => (
           <div
             key={comment.id}
-            className="w-[315px] lg:w-[50vw] bg-[#14291B] flex-shrink-0 rounded-[1.25rem] flex flex-col lg:flex-row items-center justify-center lg:gap-[5rem] p-[15px] lg:p-[5rem] self-stretch"
+            className="w-[80vw] lg:w-[50vw] bg-[#14291B] flex-shrink-0 rounded-[1.25rem] flex flex-col lg:flex-row items-center justify-center lg:gap-[5rem] p-[15px] lg:p-[5rem] self-stretch"
           >
             <p className="text-[#fff] text-center lg:text-left p-[50px_20px] lg:p-0 text-[14px] lg:text-[1.625rem] italic font-['Euclid Circular A']">
               {comment.comment}
