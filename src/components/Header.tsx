@@ -4,11 +4,11 @@ import Container from "./Container";
 const Header = () => {
   const [submenu, setSubmenu] = useState(false);
   return (
-    <Container classes="flex items-center justify-between py-[0.625rem] lg:py-[2rem] relative">
+    <Container classes="flex items-center justify-between p-[10px_20px] lg:py-[2rem] relative">
       <img
         src="/images/logo.png"
         alt="msglogo"
-        className="w-[5.813rem] h-[1.875rem] lg:w-[10.688rem] lg:h-[3.438rem]"
+        className="w-[93px] h-[30px] lg:w-[10.688rem] lg:h-[3.438rem]"
       />
       <div className="lg:gap-[2.5rem] lg:flex items-center hidden">
         <a

@@ -52,7 +52,7 @@ export default function PrettyCode({
   return (
     <div
       ref={ref}
-      className="defaultScroll border-b-solid border-b-[#00D448] border-b-[10px] rounded-tl-[0.625rem] relative rounded-tr-[0.625rem] overflow-hidden"
+      className={`${className} defaultScroll border-b-solid border-b-[#00D448] border-b-[10px] rounded-tl-[0.625rem] relative rounded-tr-[0.625rem] overflow-hidden`}
     >
       <div className="flex gap-[0.5rem] items-center absolute top-[1rem] left-[1rem] z-10">
         <span className="block w-[1rem] h-[1rem] bg-[rgb(255,95,86)] rounded-full" />

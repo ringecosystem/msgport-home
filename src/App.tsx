@@ -13,7 +13,7 @@ function App() {
       <div className="relative">
         <img
           src="/images/cover.png"
-          className="absolute top-0 right-0 left-0 bottom-0 h-full object-cover opacity-20"
+          className="hidden lg:block absolute top-0 right-0 left-0 bottom-0 h-full object-cover opacity-20"
           alt="msport"
         />
         <Header />

@@ -35,6 +35,12 @@ body {
   background-color: #161616;
 }
 
+@media (max-width: 1024px) {
+  body {
+    background-color: #0d150f;
+  }
+}
+
 .defaultScroll {
   ::-webkit-scrollbar {
     background-color: transparent;
