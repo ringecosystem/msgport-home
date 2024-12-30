@@ -13,26 +13,34 @@ const Header = () => {
       <div className="lg:gap-[2.5rem] lg:flex items-center hidden">
         <a
           target="_blank"
-          href="https://msgport.ringdao.com/docs"
+          href="https://scan.msgport.xyz"
           className="text-white text-[1rem] font-[300] leading-[1.563rem]"
         >
           Msgport Scan
         </a>
         <a
           target="_blank"
-          href="https://msgport.ringdao.com/docs/build/networks.html"
+          href=" https://msgport.ringdao.com/docs/build/networks.html"
           className="text-white text-[1rem] font-[300] leading-[1.563rem]"
         >
           Supported Networks
         </a>
         <a
           target="_blank"
-          href="https://msgport.ringdao.com/docs/community/ringdao.html"
+          href="https://msgport.ringdao.com/docs"
           className="text-white text-[1rem] font-[300] leading-[1.563rem]"
         >
           Docs
         </a>
-        <button className="text-[#161616] text-[1rem] font-[600] leading-[1.563rem] bg-[#00D448] h-[36px] rounded-[18px] px-[20px]">
+        <button
+          onClick={() =>
+            window.open(
+              "https://github.com/ringecosystem/msgport-examples",
+              "_blank"
+            )
+          }
+          className="text-[#161616] text-[1rem] font-[600] leading-[1.563rem] bg-[#00D448] h-[36px] rounded-[18px] px-[20px]"
+        >
           Try Msgport
         </button>
       </div>

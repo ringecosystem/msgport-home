@@ -11,7 +11,7 @@ export default function Footer() {
       <p className="text-[1rem] text-white font-[300]">@ 2024 Msgport</p>
       <div className="flex items-center gap-[1.875rem]">
         {data.socials.map((item: any) => (
-          <a href={item.href} key={item.id}>
+          <a href={item.href} key={item.id} target="_blank">
             <img
               src={item.icon}
               alt={item.name}
