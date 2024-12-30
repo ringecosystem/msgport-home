@@ -29,10 +29,12 @@
 
 html {
   font-family: EuclidCircularA;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #161616;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1024px) {

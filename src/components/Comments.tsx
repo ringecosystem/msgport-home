@@ -17,7 +17,7 @@ export default function Comments() {
   }, []);
   console.log(current);
   return (
-    <section className="py-[100px] lg:py-[3.125rem] flex flex-col justify-center overflow-hidden w-[100vw]">
+    <section className="py-[100px] lg:py-[3.125rem] flex flex-col justify-center overflow-hidden w-full">
       <div
         className="flex gap-[10px] lg:gap-[3.125rem] duration-700"
         style={{

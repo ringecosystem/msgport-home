@@ -24,7 +24,7 @@ const Header = () => {
       <img
         src="/images/logo.png"
         alt="msglogo"
-        className="w-[93px] h-[30px] lg:w-[10.688rem] lg:h-[3.438rem]"
+        className="w-[93px] h-[30px] lg:w-[10.688rem] lg:h-[3.438rem] z-10"
       />
       <div className="lg:gap-[2.5rem] lg:flex items-center hidden z-[100]">
         <a
