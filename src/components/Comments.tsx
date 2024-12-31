@@ -46,7 +46,7 @@ export default function Comments() {
                 className="w-[35px] lg:w-[4.375rem] h-[35px] lg:h-[4.375rem] rounded-full object-contain ml-auto"
               />
               <div>
-                <p className="text-[12px] lg:text-[1.5rem] text-white max-w-[100px] w-fit">
+                <p className="text-[12px] lg:text-[1.2rem] text-white max-w-[100px] w-fit">
                   {comment.name}
                 </p>
                 {comment.subtitle && (
@@ -58,7 +58,7 @@ export default function Comments() {
               {comment.link && (
                 <a
                   href={comment.link}
-                  className="block w-[10.5px] lg:w-[21px] h-[10.5px] lg:h-[21px] bg-[url('/assets/icons/link.svg')] bg-no-repeat bg-center bg-contain"
+                  className="block w-[10.5px] flex-shrink-0  lg:w-[21px] h-[10.5px] lg:h-[21px] bg-[url('/assets/icons/link.svg')] bg-no-repeat bg-center bg-contain"
                 />
               )}
             </div>

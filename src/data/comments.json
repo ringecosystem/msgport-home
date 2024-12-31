@@ -5,14 +5,14 @@
       "name": "RingDAO Community",
       "comment": "“Msgport provides powerful capabilities, making it much easier and more flexible to exchange messages between different chains.”",
       "logo": "/assets/logos/ringdao.svg",
-      "link": "/"
+      "link": "https://ringdao.com/"
     },
     {
       "id": "comment-1",
       "name": "Helixbox",
       "comment": "“Msgport interface and its underlying ORMP protocol provide robust support for what we accomplished in the Helixbox”",
       "logo": "/assets/logos/helixbox.svg",
-      "link": "/"
+      "link": "https://helix.box/"
     },
     {
       "id": "comment-2",

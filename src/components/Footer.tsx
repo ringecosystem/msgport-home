@@ -3,7 +3,7 @@ import data from "../data/socials.json";
 export default function Footer() {
   return (
     <section
-      className="flex flex-col-reverse lg:flex-col gap-[20px] justify-between items-center py-[23px] lg:py-[2.375rem] lg:px-[6.25rem]"
+      className="flex flex-col-reverse lg:flex-row gap-[20px] justify-between items-center py-[23px] lg:py-[2.375rem] lg:px-[6.25rem]"
       style={{
         backgroundImage: "linear-gradient(to top,#00D4484D, #00D44800",
       }}
