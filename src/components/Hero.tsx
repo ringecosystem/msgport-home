@@ -7,11 +7,13 @@ const Hero = () => {
   // const width = useWidth();
   return (
     <Container classes="bg-cover lg:relative lg:pt-[7.5rem] px-0 pb-[100px] lg:pb-[6.25rem] lg:mt-0">
-      <img
-        src="/images/cover.png"
-        className="lg:hidden w-full h-[70vw] object-cover"
-        alt="msport"
-      />
+      <div className="lg:hidden h-[70vw] -mx-[20px]">
+        <img
+          src="/images/cover.png"
+          className="w-full h-full object-cover"
+          alt="msport"
+        />
+      </div>
       <h1 className="lg:text-center text-white font-normal px-[20px] mt-[30px] lg:mt-0 lg:px-0 text-[28px] lg:text-[4.125rem] leading-[31px] lg:leading-[5.3rem]">
         Msgport provides
         <br className="lg:hidden" />

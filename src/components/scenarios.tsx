@@ -6,7 +6,7 @@ export default function Scenarios() {
       <h3 className="text-[28px]  lg:text-[3.5rem] text-[#161616] font-[600] mb-[90px] lg:mb-[5.625rem] text-center">
         Scenarios include but are not limited to
       </h3>
-      <div className="flex flex-col lg:flex-row items-center justify-between">
+      <div className="flex flex-col gap-[90px] lg:flex-row items-center justify-between">
         <div className="text-center flex flex-col items-center w-full lg:w-[25%]">
           <img
             src="/assets/icons/scenario1-icon.svg"
