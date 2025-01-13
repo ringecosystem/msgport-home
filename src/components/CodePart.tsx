@@ -17,9 +17,9 @@ export default function CodePart() {
           <img
             src="/assets/icons/easy-integration-icon.svg"
             alt="msgport easy integration"
-            className="hidden lg:block w-[6rem] h-[6rem] object-containmb-[3.125rem]"
+            className="hidden lg:block w-[6rem] h-[6rem] object-contain mb-[3.125rem]"
           />
-          <h3 className="text-center lg:text-left text-[#00D448] text-[28px] lg:text-[2.25rem] leading-[28px] lg:leading-[45px] font-[600] mb-[40px] lg:mb-[10px]">
+          <h3 className="text-center lg:text-left text-[#00D448] text-[28px] xl:text-[2.25rem] leading-[28px] lg:leading-[45px] font-[600] mb-[40px] lg:mb-[10px]">
             Allows for easy and flexible
             <br /> integration and switching
           </h3>
@@ -38,7 +38,7 @@ export default function CodePart() {
             alt="msgport message validation"
             className="hidden lg:block w-[6rem] h-[6rem] object-contain mb-[3.125rem]"
           />
-          <h3 className="text-center lg:text-right text-[#00D448] text-[28px] lg:text-[2.25rem] leading-[28px] lg:leading-[45px] font-[600] mb-[40px] lg:mb-[10px] ">
+          <h3 className="text-center lg:text-right text-[#00D448] text-[28px] xl:text-[2.25rem] leading-[28px] lg:leading-[45px] font-[600] mb-[40px] lg:mb-[10px] ">
             Allow for validating the
             <br /> incoming messages
           </h3>
