@@ -1,24 +1,27 @@
-import Container from "./Container";
+import data from "../data/socials.json";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <Container classes="flex items-center justify-between mt-[3.125rem] py-[2.688rem]">
-      <p className="font-[300] text-[0.875rem] leading-[1.375rem] lg:text-[1rem] lg:leading-[1.563rem] text-[#F2F3F5]">
+    <section
+      className="flex flex-col-reverse lg:flex-row gap-[20px] justify-between items-center py-[23px] lg:py-[2.375rem] lg:px-[6.25rem]"
+      style={{
+        backgroundImage: "linear-gradient(to top,#00D4484D, #00D44800",
+      }}
+    >
+      <p className="text-[12px] lg:text-[1rem] text-white font-[300]">
         @ 2024 Msgport
       </p>
-      <div className="flex items-center gap-[1.25rem] lg:gap-[1.875rem]">
-        <a href="" target="_blank" className="hidden">
-          <img src="/assets/icons/x.svg" alt="x" />
-        </a>
-        <a href=" https://t.me/msgport" target="_blank">
-          <img src="/assets/icons/telegram.svg" alt="telegram" />
-        </a>
-        <a href="https://github.com/ringecosystem/msgport" target="_blank">
-          <img src="/assets/icons/github.svg" alt="github" />
-        </a>
+      <div className="flex items-center gap-[1.875rem]">
+        {data.socials.map((item: any) => (
+          <a href={item.href} key={item.id} target="_blank">
+            <img
+              src={item.icon}
+              alt={item.name}
+              className="w-[24px] h-[24px] lg:w-[1.875rem] lg:h-[1.875rem] object-contain"
+            />
+          </a>
+        ))}
       </div>
-    </Container>
+    </section>
   );
-};
-
-export default Footer;
+}

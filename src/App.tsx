@@ -1,24 +1,29 @@
+import CodePart from "./components/CodePart";
+import Comments from "./components/Comments";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import ChainFree from "./components/ChainFree";
-import MsgportInterface from "./components/MsgportInterface";
-import EnablingDirverse from "./components/EnablingDiverse";
-import Governed from "./components/Governed";
-import Footer from "./components/Footer";
-import Resources from "./components/Resources";
-import RollingLogos from "./components/RollingLogos";
+import IntegratedApps from "./components/IntegratedApps";
+import LinkRow from "./components/LinkRow";
+import Scenarios from "./components/scenarios";
 
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <RollingLogos />
-      <ChainFree />
-      <MsgportInterface />
-      <EnablingDirverse />
-      <Resources />
-      <Governed />
+      <div className="relative">
+        <img
+          src="/images/cover.png"
+          className="hidden lg:block absolute w-full top-0 right-0 left-0 bottom-0 h-full object-cover opacity-20"
+          alt="msport"
+        />
+        <Header />
+        <Hero />
+      </div>
+      <LinkRow />
+      <IntegratedApps />
+      <CodePart />
+      <Scenarios />
+      <Comments />
       <Footer />
     </>
   );

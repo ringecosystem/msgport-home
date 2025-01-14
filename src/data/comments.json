@@ -1,0 +1,32 @@
+{
+  "comments": [
+    {
+      "id": "comment-0",
+      "name": "RingDAO Community",
+      "comment": "“Msgport provides powerful capabilities, making it much easier and more flexible to exchange messages between different chains.”",
+      "logo": "/assets/logos/ringdao.svg",
+      "link": "https://ringdao.com/"
+    },
+    {
+      "id": "comment-1",
+      "name": "Helixbox",
+      "comment": "“Msgport interface and its underlying ORMP protocol provide robust support for what we accomplished in the Helixbox”",
+      "logo": "/assets/logos/helixbox.svg",
+      "link": "https://helix.box/"
+    },
+    {
+      "id": "comment-2",
+      "name": "Bear Wang",
+      "comment": "“The greatest advantage of Msgport is that the port your dapp uses can be switched to another one seamlessly, reducing development costs and potential risks for vulnerability.”",
+      "logo": "/assets/logos/bearwang.svg",
+      "subtitle": "Core member of Darwinia Chains"
+    },
+    {
+      "id": "comment-3",
+      "name": "Denny Wang",
+      "comment": "“Msgport is designed to as general layer for connecting evm chains together., it currently support multiple mainstream messging protopols ports such as Layerzero,  Celer. etc.”",
+      "logo": "/assets/logos/dennywang.svg",
+      "subtitle": "Founder of the Msgport"
+    }
+  ]
+}

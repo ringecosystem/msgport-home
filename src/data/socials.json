@@ -1,0 +1,24 @@
+{
+  "socials": [
+    {
+      "id": "social-1",
+      "icon": "/assets/logos/twitter.svg",
+      "href": "https://x.com/ringecosystem"
+    },
+    {
+      "id": "social-2",
+      "icon": "/assets/logos/telegram.svg",
+      "href": "https://t.me/ringecosystem"
+    },
+    {
+      "id": "social-3",
+      "icon": "/assets/logos/github.svg",
+      "href": "https://github.com/ringecosystem/"
+    },
+    {
+      "id": "social-4",
+      "icon": "/assets/logos/discord.svg",
+      "href": "https://discord.gg/BhNbKWWfGV"
+    }
+  ]
+}

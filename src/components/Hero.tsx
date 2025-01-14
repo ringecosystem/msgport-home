@@ -1,48 +1,42 @@
-import useWidth from "../hooks/useWidth";
+import { codeBlocks } from "../data/code";
+// import useWidth from "../hooks/useWidth";
 import Container from "./Container";
+import PrettyCode from "./PrettyCode";
 
 const Hero = () => {
-  const width = useWidth();
+  // const width = useWidth();
   return (
-    <Container classes='lg:bg-[url("/images/heroBG.png")] bg-cover lg:relative mt-[6.25rem] lg:mt-0 lg:min-h-[59.75rem]'>
-      {/* <img
-        src="/images/hero1.png"
-        alt="heroimage"
-        className="w-full lg:w-[56.25rem] lg:h-[32.813rem] lg:absolute lg:top-[6.25rem] lg:right-[6.25rem] object-cover"
-      /> */}
-      <video
-        src={width > 1200 ? "/images/hero.mp4" : "/images/hero-m.mp4"}
-        autoPlay
-        loop
-        muted
-        className="w-full lg:w-[43.813rem] 3xl:w-[56.25rem] lg:top-[3.75rem] lg:right-[3.125rem] lg:h-[25.625rem] 3xl:h-[32.813rem] lg:absolute 3xl:top-[6.25rem] 3xl:right-[6.25rem] object-cover lg:rounded-[500px] 4xl:w-[56.25rem] 5xl:w-[75rem] 5xl:h-[43.813rem]"
-      ></video>
-
-      <div className="mt-[1.875rem] 2xl:mt-0 flex items-center justify-center flex-col lg:block lg:h-[22.188rem] lg:absolute lg:top-[28.125rem] lg:left-[3.125rem] 2xl:left-[6.25rem]">
-        <h4 className="text-[#fff] text-[1.25rem] leading-[1.563rem] lg:text-[3.75rem] font-[300] lg:leading-[4.755rem] tracking-[0.125rem]">
-          Programmable
-        </h4>
-        <h1 className="text-[1.875rem] text-[#00D448] lg:text-[4.375rem] 3xl:text-[5.625rem] font-bold lg:leading-[4.375rem] 3xl:leading-[5.625rem]  tracking-[0.125rem] italic w-[20.938rem] lg:w-[42.438rem] 3xl:w-auto text-center lg:text-left lg:mt-[1.25rem]">
-          CROSS-CHAIN
-        </h1>
-        <h1 className="text-[1.875rem] text-[#00D448] lg:text-[4.375rem] 3xl:text-[5.625rem] font-bold lg:leading-[4.375rem] 3xl:leading-[5.625rem]  tracking-[0.125rem] italic w-[20.938rem] lg:w-[42.438rem] 3xl:w-auto text-center lg:text-left mt-[-0.8rem] lg:mt-0">
-          MESSAGING PORT
-        </h1>
-        <a
-          href="https://msgport.ringdao.com/docs/index.html"
-          target="_blank"
-        >
-          <button className="flex items-center py-[0.5rem] pr-[0.625rem] pl-[0.938rem] lg:py-[1.125rem] bg-transparent border border-[#F2F3F5] rounded-[2.5rem] gap-[0.625rem] mt-[1.25rem] hover:text-[#00D448] hover:border-[#00D448] text-white btnHover">
-            <span className="font-[300] text-[1rem] lg:font-[500] lg:text-[1.25rem]">
-              Get Started
-            </span>
-            <img
-              src="/assets/icons/go.svg"
-              alt="goArrow"
-              className="w-[1.5rem] h-[1.5rem]"
-            />
-          </button>
-        </a>
+    <Container classes="bg-cover lg:relative lg:pt-[7.5rem] px-0 pb-[100px] lg:pb-[6.25rem] lg:mt-0">
+      <div className="lg:hidden h-[70vw] -mx-[20px]">
+        <img
+          src="/images/cover.png"
+          className="w-full h-full object-cover"
+          alt="msport"
+        />
+      </div>
+      <h1 className="lg:text-center text-white font-normal px-[20px] mt-[30px] lg:mt-0 lg:px-0 text-[28px] lg:text-[4.125rem] leading-[31px] lg:leading-[5.3rem]">
+        Msgport provides
+        <br className="lg:hidden" />
+        <span className="text-[#00D448] font-[600]">standard interfaces,</span>
+        <br />
+        enabling{" "}
+        <span className="text-[#00D448] font-[600]">flexible messaging</span>
+        <br />
+        across blockchains.
+      </h1>
+      <div className="flex flex-col lg:flex-row items-center gap-[40px] lg:gap-[6.25rem] px-[20px] lg:px-0 justify-center mt-[40px] lg:mt-[6.25rem]">
+        <PrettyCode
+          language={codeBlocks.heroCode.language}
+          code={codeBlocks.heroCode.code}
+          className="w-full lg:w-[30vw]"
+        />
+        <p className="text-[18px] lg:text-[2.25rem] lg:w-[30vw] leading-[20px] flex-shrink-0 lg:leading-[2.85rem] text-white">
+          The <span className="text-[#00D448] font-bold">only interface</span>{" "}
+          your Dapp
+          <br className="hidden lg:block" /> interacts with when
+          <br className="hidden lg:block" /> exchanging messages
+          <br className="hidden lg:block" /> between chains.
+        </p>
       </div>
     </Container>
   );

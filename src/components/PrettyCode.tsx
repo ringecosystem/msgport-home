@@ -1,7 +1,9 @@
 import { CSSProperties, useEffect, useRef } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { Prism, SyntaxHighlighterProps } from "react-syntax-highlighter";
 // @ts-ignore
 import xonokai from "react-syntax-highlighter/dist/esm/styles/prism/xonokai.js";
+
+const SyntaxHighlighter = Prism as any as React.FC<SyntaxHighlighterProps>;
 
 interface Props {
   language: "solidity" | "typescript" | "javascript" | "rust" | "go";
@@ -48,16 +50,26 @@ export default function PrettyCode({
   }, []);
 
   return (
-    <div ref={ref} className="defaultScroll">
+    <div
+      ref={ref}
+      className={`${className} defaultScroll  rounded-tl-[0.625rem] relative rounded-tr-[0.625rem] overflow-hidden`}
+    >
+      <div className="flex gap-[0.5rem] items-center absolute top-[1rem] left-[1rem] z-10">
+        <span className="block w-[1rem] h-[1rem] bg-[rgb(255,95,86)] rounded-full" />
+        <span className="block w-[1rem] h-[1rem] bg-[rgb(255,189,46)] rounded-full" />
+        <span className="block w-[1rem] h-[1rem] bg-[rgb(39,201,63)] rounded-full" />
+      </div>
       <SyntaxHighlighter
         language={language}
         style={xonokai}
         customStyle={{
           border: "none",
-          padding: "1.25rem",
-          borderRadius: "0.625rem",
+          padding: "1rem",
+          paddingTop: "2rem",
+          borderRadius: "0",
           ...customStyle,
         }}
+        PreTag="div"
         className={className}
       >
         {code}
