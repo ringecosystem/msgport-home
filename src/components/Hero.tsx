@@ -15,7 +15,7 @@ const Hero = () => {
         />
       </div>
       <h1 className="lg:text-center text-white font-normal px-[20px] mt-[30px] lg:mt-0 lg:px-0 text-[28px] lg:text-[4.125rem] leading-[31px] lg:leading-[5.3rem]">
-        Msgport provides
+        Msgport provides{" "}
         <br className="lg:hidden" />
         <span className="text-[#00D448] font-[600]">standard interfaces,</span>
         <br />
