@@ -124,11 +124,11 @@ const Header = () => {
             }}
           >
             <div className="flex items-center gap-[1.875rem]">
-              {data.socials.map((item: any) => (
+              {data.socials.map((item) => (
                 <a href={item.href} key={item.id} target="_blank">
                   <img
                     src={item.icon}
-                    alt={item.name}
+                    alt={item.id}
                     className="w-[24px] h-[24px] lg:w-[1.875rem] lg:h-[1.875rem] object-contain"
                   />
                 </a>

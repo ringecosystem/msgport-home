@@ -4,7 +4,7 @@ import Container from "./Container";
 export default function LinkRow() {
   return (
     <Container classes="flex items-center justify-center gap-[40px] lg:gap-[5rem] overflow-hidden bg-[#14291B] py-[25px] lg:py-[3.125rem]">
-      {data.links.map((item: any) => (
+      {data.links.map((item) => (
         <img
           key={item.logo}
           src={item.logo}

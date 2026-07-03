@@ -5,7 +5,7 @@ import useWidth from "../hooks/useWidth";
 export default function Comments() {
   const width = useWidth();
   const [current, setCurrent] = useState<number>(0);
-  const intervalRef = useRef<any>(null);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   useEffect(() => {
     if (intervalRef.current === null) {
       intervalRef.current = setInterval(() => {
@@ -31,7 +31,7 @@ export default function Comments() {
                 }px)))`,
         }}
       >
-        {data.comments.map((comment: any) => (
+        {data.comments.map((comment) => (
           <div
             key={comment.id}
             className="w-[80vw] lg:w-[50vw] bg-[#14291B] flex-shrink-0 rounded-[1.25rem] flex flex-col lg:flex-row items-center justify-center lg:gap-[5rem] p-[15px] lg:p-[5rem] self-stretch"
@@ -66,7 +66,7 @@ export default function Comments() {
         ))}
       </div>
       <div className="flex gap-[1.5rem] justify-center mt-[3.125rem]">
-        {data.comments.map((item: any, index: number) => (
+        {data.comments.map((item, index: number) => (
           <span
             key={`dot-${item.id}`}
             onClick={() => setCurrent(index)}

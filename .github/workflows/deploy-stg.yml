@@ -27,6 +27,9 @@ jobs:
           dist_path: dist
           alias_domain: "msgport-home-stg"
           enable_cache: true
+          cache_type: npm
+          script_install: npm ci
+          script_build: npm run build
           enable_notify_slack: true
           slack_channel: public-msgport
           slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
