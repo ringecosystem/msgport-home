@@ -1,9 +1,9 @@
 import { CSSProperties, useEffect, useRef } from "react";
 import { Prism, SyntaxHighlighterProps } from "react-syntax-highlighter";
-// @ts-ignore
+// @ts-expect-error The package does not publish types for individual style modules.
 import xonokai from "react-syntax-highlighter/dist/esm/styles/prism/xonokai.js";
 
-const SyntaxHighlighter = Prism as any as React.FC<SyntaxHighlighterProps>;
+const SyntaxHighlighter = Prism as React.ComponentType<SyntaxHighlighterProps>;
 
 interface Props {
   language: "solidity" | "typescript" | "javascript" | "rust" | "go";
@@ -22,7 +22,11 @@ export default function PrettyCode({
 
   useEffect(() => {
     const listener = (ev: WheelEvent) => {
-      const scrollableDiv = ref.current?.children[0] as Element;
+      const scrollableDiv = ref.current?.children[0] as HTMLElement | undefined;
+
+      if (!scrollableDiv) {
+        return;
+      }
 
       if (ev.deltaY > 0) {
         if (
@@ -43,9 +47,10 @@ export default function PrettyCode({
         }
       }
     };
-    ref.current?.addEventListener("wheel", listener, false);
+    const currentRef = ref.current;
+    currentRef?.addEventListener("wheel", listener, false);
     return () => {
-      ref.current?.removeEventListener("wheel", listener, false);
+      currentRef?.removeEventListener("wheel", listener, false);
     };
   }, []);
 
