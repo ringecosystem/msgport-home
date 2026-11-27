@@ -19,6 +19,7 @@ jobs:
 
       - uses: ./.github/actions/smart-vercel
         name: Deploy to Vercel
+        id: smart-vercel
         with:
           vercel_token: ${{ secrets.VERCEL_TOKEN }}
           vercel_group: itering
@@ -30,6 +31,16 @@ jobs:
           cache_type: npm
           script_install: npm ci
           script_build: npm run build
-          enable_notify_slack: true
-          slack_channel: public-msgport
-          slack_webhook: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
+          enable_notify_slack: false
+
+      - name: Notify Slack
+        uses: rtCamp/action-slack-notify@v2
+        continue-on-error: true
+        env:
+          SLACK_CHANNEL: public-msgport
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: https://avatars.githubusercontent.com/u/14985020?s=48&v=4
+          SLACK_MESSAGE: ${{ steps.smart-vercel.outputs.PREVIEW_LINK }}
+          SLACK_TITLE: Preview
+          SLACK_USERNAME: Vercel
+          SLACK_WEBHOOK: ${{ secrets.SLACK_INCOMING_WEBHOOK_URL }}
